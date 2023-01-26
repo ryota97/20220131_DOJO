@@ -1,0 +1,13 @@
+fork する
+github urlコピー
+git clone (URL)
+code dojo_website/
+
+同じフォルダに入れてすべて保存
+git checkout -b 新規ブランチ名
+git add .
+git commit -m "メッセージ名"
+git remote add origin URL
+git push -u origin master//ブランチ名
+
+git remote remove origin

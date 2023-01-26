@@ -1,0 +1,10 @@
+Working as a team in Unity!
+ 
+1.One person make a Unity project on Computer AND make/push to a Github Repo
+2.Other Team members clone the project
+3.Make your OWN branch
+4.Open Unity, and add a NEW scene
+5.Add something to your scene (Object, script, etc)
+6.Commit and Push your branch to Github
+7.Make & Merge PR for that branch
+8.The project Creator copics/moves all object (etc) from other scencs into ONE scene!
