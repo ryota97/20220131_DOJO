@@ -25,16 +25,7 @@ public static class ConfigurationUtils
     int cont = 0;
     public static float BallImpulseForce
     {
-      if(cont==0)
-      {  
         get { return 200; }  //def:200
-        cont++;
-      }
-      else
-      {
-        get { return 1000; }
-      }
-
     }
 
     /// <summary>
