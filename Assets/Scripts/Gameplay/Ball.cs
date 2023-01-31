@@ -24,7 +24,7 @@ public class Ball : MonoBehaviour
     /// </summary>	
     void Start()
     {
-        int spd = 200;
+        float spd = 200;
 
         // start move timer
         moveTimer = gameObject.AddComponent<Timer>();
