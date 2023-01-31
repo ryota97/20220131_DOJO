@@ -105,8 +105,8 @@ public class Ball : MonoBehaviour
         Vector2 force = new Vector2(
             // ConfigurationUtils.BallImpulseForce * Mathf.Cos(angle),
             // ConfigurationUtils.BallImpulseForce * Mathf.Sin(angle));
-            200 * Mathf.Cos(angle),
-            200 * Mathf.Sin(angle));
+            200++ * Mathf.Cos(angle),
+            200++ * Mathf.Sin(angle));
         GetComponent<Rigidbody2D>().AddForce(force);
     }
 
