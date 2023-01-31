@@ -22,9 +22,10 @@ public static class ConfigurationUtils
     /// Gets the ball impulse force
     /// </summary>
     /// <value>ball impulse force</value>
-    int cont = 0;
+
     public static float BallImpulseForce
     {
+        int cont = 0;
         get { return 200; }  //def:200
     }
 
