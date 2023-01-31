@@ -305,6 +305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabPaddle: {fileID: 3244552459319685573, guid: 0bdbd96424c09534bbc100f43f82aada, type: 3}
   prefabStandardBlock: {fileID: 7500841345943176926, guid: 04e5a3cfc636f104f9eb3a4b2dc11192, type: 3}
+  prefabadd_seoBlock: {fileID: 7500841345943176926, guid: b01dedb9d21dde14285f3524264bf049, type: 3}
 --- !u!114 &519420037
 MonoBehaviour:
   m_ObjectHideFlags: 0
