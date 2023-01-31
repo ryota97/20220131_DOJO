@@ -109,6 +109,7 @@ public class Ball : MonoBehaviour
             spd * Mathf.Cos(angle),
             spd * Mathf.Sin(angle));
         GetComponent<Rigidbody2D>().AddForce(force);
+            spd++
     }
 
     #endregion
