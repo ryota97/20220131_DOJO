@@ -24,8 +24,6 @@ public class Ball : MonoBehaviour
     /// </summary>	
     void Start()
     {
-        float spd = 200;
-
         // start move timer
         moveTimer = gameObject.AddComponent<Timer>();
         moveTimer.Duration = 1;
@@ -103,6 +101,7 @@ public class Ball : MonoBehaviour
     void StartMoving()
     {
         // get the ball moving
+        float spd = 200;
         float angle = -90 * Mathf.Deg2Rad;
         Vector2 force = new Vector2(
             // ConfigurationUtils.BallImpulseForce * Mathf.Cos(angle),
