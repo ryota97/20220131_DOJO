@@ -25,7 +25,6 @@ public static class ConfigurationUtils
 
     public static float BallImpulseForce
     {
-        int cont = 0;
         get { return 200; }  //def:200
     }
 
