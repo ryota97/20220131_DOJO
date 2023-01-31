@@ -24,6 +24,8 @@ public class Ball : MonoBehaviour
     /// </summary>	
     void Start()
     {
+        int spd = 200;
+
         // start move timer
         moveTimer = gameObject.AddComponent<Timer>();
         moveTimer.Duration = 1;
@@ -105,8 +107,8 @@ public class Ball : MonoBehaviour
         Vector2 force = new Vector2(
             // ConfigurationUtils.BallImpulseForce * Mathf.Cos(angle),
             // ConfigurationUtils.BallImpulseForce * Mathf.Sin(angle));
-            200++ * Mathf.Cos(angle),
-            200++ * Mathf.Sin(angle));
+            spd * Mathf.Cos(angle),
+            spd * Mathf.Sin(angle));
         GetComponent<Rigidbody2D>().AddForce(force);
     }
 
