@@ -5,25 +5,11 @@ using UnityEngine;
 /// <summary>
 /// A block
 /// </summary>	
-public class Block : MonoBehaviour
+public class seo_Block : Block
 {
     #region Unity methods
 
-    /// <summary>
-    /// Start is called before the first frame update
-    /// </summary>	
-    void Start()
-    {
-
-    }
-
-    /// <summary>
-	/// Update is called once per frame
-	/// </summary>	
-    void Update()
-    {
-        
-    }
+    private int Collcount = 0;
 
     /// <summary>
     /// Destroys the block on collision with a ball
@@ -32,8 +18,17 @@ public class Block : MonoBehaviour
     void OnCollisionEnter2D(Collision2D coll)
     {
         if (coll.gameObject.CompareTag("Ball"))
-        {            
-            Destroy(gameObject);
+        {
+            Collcount += 1;
+            //if (Collcount == 4)
+            //{
+            //    gameObject.GetComponent<Sprite>() = Sprite.standerd;
+            //}
+
+            if (Collcount == 5)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 
