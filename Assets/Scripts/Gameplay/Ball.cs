@@ -103,8 +103,10 @@ public class Ball : MonoBehaviour
         // get the ball moving
         float angle = -90 * Mathf.Deg2Rad;
         Vector2 force = new Vector2(
-            ConfigurationUtils.BallImpulseForce * Mathf.Cos(angle),
-            ConfigurationUtils.BallImpulseForce * Mathf.Sin(angle));
+            // ConfigurationUtils.BallImpulseForce * Mathf.Cos(angle),
+            // ConfigurationUtils.BallImpulseForce * Mathf.Sin(angle));
+            200 * Mathf.Cos(angle),
+            200 * Mathf.Sin(angle));
         GetComponent<Rigidbody2D>().AddForce(force);
     }
 
