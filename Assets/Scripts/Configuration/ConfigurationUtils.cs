@@ -30,7 +30,7 @@ public static class ConfigurationUtils
         get { return 200; }  //def:200
         cont++;
       }
-      else()
+      else
       {
         get { return 1000; }
       }
