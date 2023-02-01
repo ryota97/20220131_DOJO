@@ -15,9 +15,6 @@ public class LevelBuilder : MonoBehaviour
     [SerializeField]
     GameObject prefabStandardBlock;
 
-    [SerializeField]
-    GameObject prefabadd_seoBlock;
-
     #endregion
 
     #region Unity methods
@@ -61,17 +58,6 @@ public class LevelBuilder : MonoBehaviour
             // move to next row
             currentPosition.x = leftBlockOffset;
             currentPosition.y += blockHeight;
-        }
-
-        Vector2 currentPrePosition = new Vector2(leftBlockOffset, topRowOffset-(2* blockHeight));
-        for (int column = 0; column <blocksPerRow-2; column++)
-        {
-
-            currentPrePosition.x = leftBlockOffset + blockWidth * Random.Range(0, blocksPerRow);
-            currentPrePosition.y = topRowOffset - blockHeight * Random.Range(2, 6);
-            Instantiate(prefabadd_seoBlock, currentPrePosition, Quaternion.identity);
-
- 
         }
     }
 
