@@ -15,12 +15,15 @@ public class LevelBuilder : MonoBehaviour
     [SerializeField]
     GameObject prefabStandardBlock;
 
+<<<<<<< HEAD
     [SerializeField]
     GameObject prefabStandardBlock2;//add-horada
 
     [SerializeField]
     GameObject prefabadd_seoBlock;
 
+=======
+>>>>>>> b3a51123685a66cd35bff95a7ae07304ce78df1d
     #endregion
 
     #region Unity methods
@@ -81,6 +84,7 @@ public class LevelBuilder : MonoBehaviour
             currentPosition.x = leftBlockOffset;
             currentPosition.y += blockHeight;
         }
+<<<<<<< HEAD
 
         Vector2 currentPrePosition = new Vector2(leftBlockOffset, topRowOffset-(2* blockHeight));
         for (int column = 0; column <blocksPerRow-2; column++)
@@ -90,6 +94,8 @@ public class LevelBuilder : MonoBehaviour
             currentPrePosition.y = topRowOffset - blockHeight * Random.Range(2, 6);
             Instantiate(prefabadd_seoBlock, currentPrePosition, Quaternion.identity);
             }
+=======
+>>>>>>> b3a51123685a66cd35bff95a7ae07304ce78df1d
     }
 
     /// <summary>

@@ -35,7 +35,10 @@ public class Block : MonoBehaviour
     {
         if (coll.gameObject.CompareTag("Ball"))
         {
+<<<<<<< HEAD
             Instantiate<GameObject>(prefabExplosion, transform.position, Quaternion.identity);
+=======
+>>>>>>> b3a51123685a66cd35bff95a7ae07304ce78df1d
             Destroy(gameObject);
         }
     }
