@@ -12,6 +12,8 @@ public class Block : MonoBehaviour
     /// <summary>
     /// Start is called before the first frame update
     /// </summary>	
+    [SerializeField]
+    GameObject prefabExplosion;
     void Start()
     {
 
@@ -32,7 +34,8 @@ public class Block : MonoBehaviour
     void OnCollisionEnter2D(Collision2D coll)
     {
         if (coll.gameObject.CompareTag("Ball"))
-        {            
+        {
+            Instantiate<GameObject>(prefabExplosion, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }
