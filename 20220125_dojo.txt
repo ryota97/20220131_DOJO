@@ -8,3 +8,7 @@ Working as a team in Unity!
 6.Commit and Push your branch to Github
 7.Make & Merge PR for that branch
 8.The project Creator copics/moves all object (etc) from other scencs into ONE scene!
+
+
+1/31
+ボールが当たったら何か動作　（ゆっくり動くなど）
