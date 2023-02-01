@@ -24,7 +24,7 @@ public static class ConfigurationUtils
     /// <value>ball impulse force</value>
     public static float BallImpulseForce
     {
-        get { return 1000; }
+        get { return 800; }
     }
 
     /// <summary>
