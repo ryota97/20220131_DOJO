@@ -9,6 +9,9 @@ public class Ball : MonoBehaviour
 {
     #region Fields
 
+    [SerializeField]
+    GameObject Explosion;
+
     // move delay timer
     Timer moveTimer;
 
@@ -52,6 +55,7 @@ public class Ball : MonoBehaviour
         {
             // spawn new ball and destroy self
             Camera.main.GetComponent<BallSpawner>().SpawnBall();
+            Instantiate<GameObject>(Explosion, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }
@@ -71,6 +75,7 @@ public class Ball : MonoBehaviour
             {
                 Camera.main.GetComponent<BallSpawner>().SpawnBall();
             }
+            Instantiate<GameObject>(Explosion, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }
